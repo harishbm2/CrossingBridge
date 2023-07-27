@@ -1,0 +1,39 @@
+# Series of events in the order for the hiking event.
+# At the bridge, the team present at that time should cross the bridge
+# When new hikers join, team is updated.
+# Speed is in feets/minute
+# Length is in feets.
+
+events: hiking              # Hiking event
+
+  hikers:                   # List of hikers in the group
+    - name: A
+      speed: 100
+    - name: B
+      speed: 50
+    - name: C
+      speed: 20
+    - name: D
+      speed: 10
+
+  bridge:                   # Encounterd bridge details
+    - name: 1st
+      length: 100
+
+  hikers:
+    - name: E
+      speed: 2.5
+
+  bridge:
+    - name: 2nd
+      length: 250
+
+  hikers:
+    - name: F
+      speed: 25
+#    - name: G
+#      speed: 15
+
+  bridge:
+    - name: 3rd
+      length: 150
